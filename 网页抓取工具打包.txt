@@ -1,0 +1,5 @@
+set CONDA_FORCE_32BIT=1
+conda create -n pagegetEnv python=3.7
+activate pagegetEnv
+pip install -r requirements.txt
+pyinstaller -Fw -i zjexico1.ico spider_UI.py deny_access.py file_path.py -p D:\Pyzjex D:\Pyzjex\qs_spider --hidden-import deny_access file_path
